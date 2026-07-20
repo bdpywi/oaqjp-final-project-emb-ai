@@ -14,3 +14,5 @@ label = response['label'] score = response['score']
 return "The given text has been identified as {} with a score of {}.".format(label.split('_')[1], score)
 
 ```
+@app.route("/") def render_index_page(): return render_template('index.html')
+  ```python if __name__ == "__main__": app.run(host="0.0.0.0", port=5000) ```
